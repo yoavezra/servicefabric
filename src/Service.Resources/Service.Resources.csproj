@@ -3,8 +3,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
-    <Platforms>x64</Platforms>
     <RootNamespace>ServiceSample.Services.Resources</RootNamespace>
     <AssemblyName>ServiceSample.Services.Resources</AssemblyName>
   </PropertyGroup>
