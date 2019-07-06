@@ -3,8 +3,7 @@
 
   <PropertyGroup>
     <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <TargetFramework>net461</TargetFramework>
     <Platforms>x64</Platforms>
     <RootNamespace>ServiceSample.CloudBornApplication.Service.CloudBornWorker</RootNamespace>
     <AssemblyName>ServiceSample.CloudBornApplication.Service.CloudBornWorker</AssemblyName>
