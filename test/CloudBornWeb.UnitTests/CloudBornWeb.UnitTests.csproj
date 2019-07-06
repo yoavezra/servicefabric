@@ -3,7 +3,6 @@
 
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
-
     <IsPackable>false</IsPackable>
     <AssemblyName>ServiceSample.CloudBornApplication.CloudBornWeb.UnitTests</AssemblyName>
     <RootNamespace>ServiceSample.CloudBornApplication.CloudBornWeb.UnitTests</RootNamespace>

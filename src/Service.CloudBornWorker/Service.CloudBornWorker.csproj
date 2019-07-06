@@ -2,11 +2,10 @@
   <Import Project="..\..\ServiceSample.CSharp.Common.props" />
 
   <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
-    <TargetFramework>net461</TargetFramework>
-    <Platforms>x64</Platforms>
-    <RootNamespace>ServiceSample.CloudBornApplication.Service.CloudBornWorker</RootNamespace>
     <AssemblyName>ServiceSample.CloudBornApplication.Service.CloudBornWorker</AssemblyName>
+    <RootNamespace>ServiceSample.CloudBornApplication.Service.CloudBornWorker</RootNamespace>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 
