@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ApplicationPackageRoot\ApplicationManifest.xml" />
+    <None Include="ApplicationParameters\Cloud.xml" />
     <None Include="ApplicationParameters\Local.1Node.xml" />
     <None Include="ApplicationParameters\Local.5Node.xml" />
     <None Include="PublishProfiles\Local.1Node.xml" />
@@ -28,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="PublishProfiles\Cloud.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Service.CloudBornWeb\Service.CloudBornWeb.csproj" />
