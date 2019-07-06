@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- The configuration defined here is used in cases where:
+1) The configuration hasn't been overriden in ApplicationManifest.xml or in the environment specific configuration at .\ServiceFabricApplication\ApplicationParameters
+2) When running the Service.CloudBornWeb standalone (without Service Fabric emulator)
+-->
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="ServiceEnvironment">
+    <Parameter Name="DataCenterName" Value="Dev" />
+    <Parameter Name="EnvironmentSettingsResourceName" Value="Int.Settings.json" />
+  </Section>
+  <Section Name="TokenValidation">
+    <Parameter Name="AuthorizationServer" Value="https://login.microsoftonline.com/common" />
+    <Parameter Name="ValidAudiences" Value="https://localhost" />
+    <Parameter Name="IssuerPrefix" Value="https://sts.windows.net" />
+  </Section>
+  <Section Name="AuthorizedResources">
+    <!-- The Application that can publish ingest signals for testing purposes -->
+    <Parameter Name="TestTrustedAppId" Value="e04c7e25-ac8b-42b8-8cfd-223346714af9" />
+  </Section>
+</Settings>

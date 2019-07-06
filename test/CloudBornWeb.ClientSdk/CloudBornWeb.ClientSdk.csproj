@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>ServiceSample.CloudBornApplication.CloudBornWeb.ClientSdk</AssemblyName>
+    <RootNamespace>ServiceSample.CloudBornApplication.CloudBornWeb.ClientSdk</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common.ClientSdk\Common.ClientSdk.csproj" />
+    <ProjectReference Include="..\Common.IntegrationTests\Common.IntegrationTests.csproj" />
+    <ProjectReference Include="..\Testing.Resources\Testing.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>

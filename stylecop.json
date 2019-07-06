@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "layoutRules": {
+      "newlineAtEndOfFile": "allow"
+    },
+    "documentationRules": {
+      "companyName": "Microsoft",
+      "copyrightText": "© {companyName}. All rights reserved."
+    },
+    "namingRules": {
+      "allowedHungarianPrefixes": [
+        "ms"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <RootNamespace>ServiceSample.Services.Resources</RootNamespace>
+    <AssemblyName>ServiceSample.Services.Resources</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Int.Settings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Int.Settings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+</Project>

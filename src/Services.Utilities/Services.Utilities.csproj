@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+<PropertyGroup>
+  <TargetFramework>netstandard2.0</TargetFramework>
+  <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+  <Platforms>x64</Platforms>
+  <RootNamespace>ServiceSample.Services.Utilities</RootNamespace>
+  <AssemblyName>ServiceSample.Services.Utilities</AssemblyName>
+</PropertyGroup>
+
+<ItemGroup>
+  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+  <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.HttpSys" Version="3.4.641" />
+  <PackageReference Include="Microsoft.ServiceFabric" Version="6.5.641" />
+  <PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.4.641" />
+</ItemGroup>
+
+<ItemGroup>
+  <ProjectReference Include="..\Common\Common.csproj" />
+</ItemGroup>
+</Project>

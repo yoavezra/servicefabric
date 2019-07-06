@@ -1,0 +1,13 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PackageReference Include="NullGuard.Fody" Version="1.8.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))\FodyWeavers.cs" Link="FodyWeavers.cs">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <ProjectWeaverXml>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))\FodyWeavers.xml</ProjectWeaverXml>
+  </PropertyGroup>
+</Project>

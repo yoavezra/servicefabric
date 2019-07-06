@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+  <PropertyGroup>
+    <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <AssemblyName>ServiceSample.CloudBornApplication.Service.CloudBornWeb</AssemblyName>
+    <RootNamespace>ServiceSample.CloudBornApplication.Service.CloudBornWeb</RootNamespace>
+    <StartupObject></StartupObject>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
+    <PackageReference Include="Microsoft.ServiceFabric" Version="6.5.641" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.4.641" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudBorn.Common\CloudBorn.Common.csproj" />
+    <ProjectReference Include="..\Service.Resources\Service.Resources.csproj" />
+    <ProjectReference Include="..\Services.Utilities\Services.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+</Project>

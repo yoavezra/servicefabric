@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+  <PropertyGroup>
+    <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <RootNamespace>ServiceSample.CloudBornApplication.Service.CloudBornWorker</RootNamespace>
+    <AssemblyName>ServiceSample.CloudBornApplication.Service.CloudBornWorker</AssemblyName>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.4.641" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudBorn.Common\CloudBorn.Common.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Service.Resources\Service.Resources.csproj" />
+    <ProjectReference Include="..\Services.Utilities\Services.Utilities.csproj" />
+  </ItemGroup>
+</Project>

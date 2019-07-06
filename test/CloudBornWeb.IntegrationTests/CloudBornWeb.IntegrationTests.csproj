@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>ServiceSample.CloudBornApplication.CloudBornWeb.IntegrationTests</AssemblyName>
+    <RootNamespace>ServiceSample.CloudBornApplication.CloudBornWeb.IntegrationTests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0-beta4" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0-beta4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudBornWeb.ClientSdk\CloudBornWeb.ClientSdk.csproj" />
+    <ProjectReference Include="..\Common.IntegrationTests\Common.IntegrationTests.csproj" />
+    <ProjectReference Include="..\Testing.Resources\Testing.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>

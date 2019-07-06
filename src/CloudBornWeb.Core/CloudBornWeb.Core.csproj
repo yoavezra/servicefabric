@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\ServiceSample.CSharp.Common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <RootNamespace>ServiceSample.CloudBornApplication.CloudBornWeb.Core</RootNamespace>
+    <AssemblyName>ServiceSample.CloudBornApplication.CloudBornWeb.Core</AssemblyName>
+  </PropertyGroup>
+</Project>
